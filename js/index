@@ -1,0 +1,23 @@
+let btn = document.getElementById(btn);
+
+btn.style.backgroundColor="pink";
+btn.style.color="red";
+btn.style.padding="15 px 30px";
+btn.style.border="2px solid black";
+
+btn.onmouseover=function()
+{
+    let color=btn.style.color;
+    btn.style.color=btn.style.backgroundColor;
+    btn.style.backgroundColor = color;
+};
+
+btn.onmouseout = function()
+{
+    let color=btn.style.color;
+    btn.style.color=btn.style.backgroundColor;
+    btn.style.backgroundColor = color;
+};
+
+btn.style.cursor = "pointer";
+btn.style.transitionDuration = "0.5s";
